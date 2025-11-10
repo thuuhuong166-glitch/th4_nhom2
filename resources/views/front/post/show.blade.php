@@ -11,3 +11,4 @@
   </article>
   <a class="btn btn-secondary" href="{{ route('front.posts.index') }}">← Quay lại</a>
 @endsection
+
