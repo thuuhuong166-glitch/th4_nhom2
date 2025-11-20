@@ -9,13 +9,12 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
   <div class="container">
-    <a class="navbar-brand" href="{{ route('home') }}">My Blog</a>
+    <a class="navbar-brand" href="{{ url('/') }}">My Blog</a>
     <div>
-      <a class="btn btn-sm btn-outline-light" href="{{ route('admin.posts.index') }}">Admin</a>
+      <a class="btn btn-sm btn-outline-light" href="{{ url('/admin/posts') }}">Admin</a>
     </div>
   </div>
 </nav>
-
 <div class="container">
   @if(session('ok')) <div class="alert alert-success">{{ session('ok') }}</div> @endif
   @yield('content')
